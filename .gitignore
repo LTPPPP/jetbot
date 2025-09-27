@@ -3,3 +3,5 @@
 
 # MkDocs documentation
 site/
+/jetbot/__pycache__
+/jetbot/camera/__pycache__

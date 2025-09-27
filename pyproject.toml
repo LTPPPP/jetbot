@@ -1,0 +1,14 @@
+[project]
+name = "jetbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ipywidgets>=8.1.7",
+    "numpy>=2.2.6",
+    "opencv-python>=4.11.0.86",
+    "pyserial>=3.5",
+    "sparkfun-qwiic>=2.0.0",
+    "traitlets>=5.14.3",
+]
