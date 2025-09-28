@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "A": {
+      "x": 0,
+      "y": 0,
+      "type": "intersection"
+    },
+    "B": {
+      "x": 1,
+      "y": 0,
+      "type": "intersection"
+    },
+    "C": {
+      "x": 2,
+      "y": 0,
+      "type": "intersection"
+    },
+    "D": {
+      "x": 0,
+      "y": 1,
+      "type": "intersection"
+    },
+    "E": {
+      "x": 1,
+      "y": 1,
+      "type": "intersection"
+    },
+    "F": {
+      "x": 2,
+      "y": 1,
+      "type": "intersection"
+    }
+  },
+  "edges": {
+    "A": ["B", "D"],
+    "B": ["A", "C", "E"],
+    "C": ["B", "F"],
+    "D": ["A", "E"],
+    "E": ["B", "D", "F"],
+    "F": ["C", "E"]
+  },
+  "start_node": "A",
+  "end_node": "F"
+}

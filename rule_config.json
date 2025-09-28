@@ -1,0 +1,70 @@
+{
+  "description": "Cấu hình rule-based cho robot - Bạn có thể chỉnh sửa file này để thay đổi hành vi robot",
+  "rules": [
+    {
+      "step": 1,
+      "action": "go_straight",
+      "duration": 3.0,
+      "description": "Đi thẳng 3 giây"
+    },
+    {
+      "step": 2,
+      "action": "turn_right",
+      "angle": 90,
+      "description": "Rẽ phải 90 độ"
+    },
+    {
+      "step": 3,
+      "action": "go_straight", 
+      "duration": 2.0,
+      "description": "Đi thẳng 2 giây"
+    },
+    {
+      "step": 4,
+      "action": "turn_left",
+      "angle": 90,
+      "description": "Rẽ trái 90 độ"
+    },
+    {
+      "step": 5,
+      "action": "go_straight",
+      "duration": 2.5,
+      "description": "Đi thẳng 2.5 giây"
+    },
+    {
+      "step": 6,
+      "action": "wait",
+      "duration": 1.0,
+      "description": "Chờ 1 giây"
+    },
+    {
+      "step": 7,
+      "action": "turn_right",
+      "angle": 180,
+      "description": "Quay ngược lại 180 độ"
+    },
+    {
+      "step": 8,
+      "action": "go_straight",
+      "duration": 1.0,
+      "description": "Đi thẳng 1 giây"
+    },
+    {
+      "step": 9,
+      "action": "stop",
+      "description": "Dừng lại"
+    }
+  ],
+  "notes": [
+    "Các loại action hỗ trợ:",
+    "- go_straight: đi thẳng (cần tham số duration)",
+    "- turn_right: rẽ phải (cần tham số angle)",
+    "- turn_left: rẽ trái (cần tham số angle)",
+    "- wait: chờ đợi (cần tham số duration)",
+    "- stop: dừng lại",
+    "",
+    "Tham số:",
+    "- duration: thời gian (giây)",
+    "- angle: góc độ (90, 180, etc.)"
+  ]
+}

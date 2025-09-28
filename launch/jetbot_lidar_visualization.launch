@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+  JetBot RPLIDAR with RViz Visualization
+  Launches RPLIDAR node and RViz for real-time visualization
+-->
+<launch>
+  <!-- Include the basic RPLIDAR A1 launch file -->
+  <include file="$(find jetbot)/launch/jetbot_rplidar_a1.launch" />
+
+  <!-- Launch RViz with LIDAR visualization -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jetbot)/rviz/jetbot_lidar.rviz" output="screen"/>
+</launch>
